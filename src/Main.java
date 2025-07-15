@@ -20,7 +20,7 @@ public class Main {
         List<ShowSlot> slots = showService.getSlotsByGenre("Comedy", new StartTimeRankingStrategy());
         for(ShowSlot slot : slots){
             System.out.println(slot.getShowName() + ": (" + slot.getTime() + ")" + slot.getRemaining());
-
+System.out.println("100000");
         }
         bookingService.book("UserA", "TMKOC", "12:00", 2);
         bookingService.viewBooking("UserA");
